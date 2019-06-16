@@ -1,0 +1,33 @@
+th, td {
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+  background-color: green;
+}
+
+table {
+  -webkit-align-content: center;
+  align-content: center;
+  height: 500px;
+  width: 500px;
+  margin-left: 33%;
+  margin-right: 33%;
+  margin-top: 2%;
+  border: 1px solid red;
+}
+
+
+.inactive {
+  background-color: red;
+
+}
+
+.active {
+  background-color: green;
+
+}
+
+.found {
+  background-color:purple;
+  /*cursor: default; */
+}

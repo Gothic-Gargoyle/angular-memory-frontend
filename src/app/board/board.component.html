@@ -1,0 +1,9 @@
+<h2>Number of matches found {{game.matched.length}}</h2>
+<h3>Time since begin of game {{(game.time)}}</h3>
+<table>
+  <tr *ngFor="let row of game.cards; index as y">
+    <td *ngFor="let card of row; index as x" (click)="onClick(x, y)" [class.found]="card.isFound" [class.active]="!card.isHidden">
+      {{card.isFound || !card.isHidden ? card.letter : card.character}}
+    </td>
+  </tr>
+</table>
