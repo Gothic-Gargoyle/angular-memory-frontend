@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import { Router } from '@angular/router';
 import {GameService} from './game.service';
 import Game from './game';
 import Settings from './settings';
@@ -17,11 +18,12 @@ export class AppComponent implements OnInit {
   scores = [];
 
   constructor(
+    private router: Router,
     private gameService : GameService,
     private authenticationService: AuthenticationService
   ) {
     this.gameService = gameService;
-    this.authenticationService.currentUser.subscribe(x => this.currentUser = x);
+    //this.authenticationService.currentUser.subscribe(x => this.currentUser = x);
     this.newGame();
   }
 

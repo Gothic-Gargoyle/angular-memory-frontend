@@ -10,7 +10,6 @@ import { LoginComponent } from './login/login.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http'; 
 import { JwtInterceptor } from './_helpers/jwt.interceptor';
 import { ErrorInterceptor } from './_helpers/error.interceptor';
-import { SecretComponent } from './secret/secret.component';
 
 
 @NgModule({
@@ -19,7 +18,6 @@ import { SecretComponent } from './secret/secret.component';
     BoardComponent,
     HighscoreComponent,
     LoginComponent,
-    SecretComponent
   ],
   imports: [
     BrowserModule,
